@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Josefin+Sans:wght@100;300;500&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+
+body {
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: darkgrey;
+    color: rgb(12, 11, 11);
+    font-family: 'Passion One', cursive;
+}
+
+
+header {
+    display: flex;
+    /* serve para posicionar e alinhar elementos*/
+    justify-content: space-between;
+    /*espaço entre os elementos o justify-content ele é usado de acordo com o flex-direction e para usado o elemento precisa ser diplay flex , o row ja é padrão e mexe-se na horizontal*/
+    padding: 25px;
+
+
+}
+
+header .logo,
+header .imagem-botao {
+    width: 30px;
+    transition: 0.2 ease-in-out;
+
+}
+
+header #botao-alterar-tema {
+    background: none;
+    border: none;
+
+}
+
+header .logo:hover,
+header .imagem-botao:hover {
+    transform: scale(1.06);
+    /* ele aumenta o elemento na hr que passa o mouse*/
+    cursor: pointer;
+    /*serve para na hr que colocar o mouse em cima do elemento vire uma mão apontamdo o dedo*/
+
+}
+
+main {
+
+    padding: 25px;
+}
+
+main .descricao {
+    max-height: 80px;
+    overflow-y: scroll;
+    /*hidden:se tem um conteúdo tranbordando pra fora ele faz ficar dentro msm que corte um pedaço e coloca-se o scrool pra ter uma barra de rolagem pra ver o elemento inteiro*/
+
+}
+
+ul.list-pokemon {
+    display: flex;
+    flex-wrap: wrap;
+    /* ele faz quebrar a linha caso os elementos nao caibam na caixa*/
+    gap: 30px;
+    /*espaçamento de todos os lados dos elementos*/
+    justify-content: center;
+    /*centraliza todos os elementos e tem q ter display flex  e usa-se o flex sempre no pai do elemento q vc quer mexer*/
+    
+}
+
+li.cartao-pokemon {
+    width: 170px;
+    background-color: #d8e3ec;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*vai alinhar os elementos no centro horizontalmente*/
+    gap: 15px;
+    transition: 0.2 ease-in-out;
+}
+
+.cartao-pokemon:hover {
+    background-color: #aadddb;
+    transform: scale(1.09);
+    cursor: pointer;
+}
+
+.cartao-pokemon .gif {
+    width: 80px;
+    height: 70px;
+}
+
+div.informacoes {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    /* vai ficar todos alinhados um baixo do outro caso seja muitas palavras*/
+    text-transform: uppercase;
+    /*todos em letra maiuscula*/
+    font-size: 17px;
+}
+
+.informacoes span {
+
+    margin: 0px 3px;
+}
+
+li.tipo {
+    display: inline-block;
+    border: 1px solid;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+li.tipo.grama {
+    border-color: green;
+    background-color: rgb(90, 163, 90);
+}
+
+li.tipo.veneno {
+    border-color: purple;
+    background-color: rgb(156, 74, 156);
+}
+
+li.tipo.fogo {
+    border-color: orangered;
+    background-color: rgb(240, 125, 84);
+}
+
+li.tipo.agua {
+    border-color: #1198c5;
+    background-color: #52cbf3;
+}
+
+li.tipo.inseto {
+    border-color: #7e8b14;
+    background-color: #a6b91a;
+}
+
+/*modo escuro*/
+
+body.modo-escuro {
+    background-color: black;
+    color: aliceblue;
+}
+.modo-escuro .cartao-pokemon {
+    background-color: #a8a8a8;
+}
