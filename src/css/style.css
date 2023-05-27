@@ -12,9 +12,7 @@ body {
 
 header {
     display: flex;
-    /* serve para posicionar e alinhar elementos*/
     justify-content: space-between;
-    /*espaço entre os elementos o justify-content ele é usado de acordo com o flex-direction e para usado o elemento precisa ser diplay flex , o row ja é padrão e mexe-se na horizontal*/
     padding: 25px;
 
 
@@ -36,9 +34,8 @@ header #botao-alterar-tema {
 header .logo:hover,
 header .imagem-botao:hover {
     transform: scale(1.06);
-    /* ele aumenta o elemento na hr que passa o mouse*/
     cursor: pointer;
-    /*serve para na hr que colocar o mouse em cima do elemento vire uma mão apontamdo o dedo*/
+
 
 }
 
@@ -50,19 +47,17 @@ main {
 main .descricao {
     max-height: 80px;
     overflow-y: scroll;
-    /*hidden:se tem um conteúdo tranbordando pra fora ele faz ficar dentro msm que corte um pedaço e coloca-se o scrool pra ter uma barra de rolagem pra ver o elemento inteiro*/
+
 
 }
 
 ul.list-pokemon {
     display: flex;
     flex-wrap: wrap;
-    /* ele faz quebrar a linha caso os elementos nao caibam na caixa*/
     gap: 30px;
-    /*espaçamento de todos os lados dos elementos*/
     justify-content: center;
-    /*centraliza todos os elementos e tem q ter display flex  e usa-se o flex sempre no pai do elemento q vc quer mexer*/
-    
+
+
 }
 
 li.cartao-pokemon {
@@ -73,7 +68,6 @@ li.cartao-pokemon {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*vai alinhar os elementos no centro horizontalmente*/
     gap: 15px;
     transition: 0.2 ease-in-out;
 }
@@ -95,9 +89,7 @@ div.informacoes {
     padding: 8px;
     display: flex;
     justify-content: space-between;
-    /* vai ficar todos alinhados um baixo do outro caso seja muitas palavras*/
     text-transform: uppercase;
-    /*todos em letra maiuscula*/
     font-size: 17px;
 }
 
@@ -144,6 +136,7 @@ body.modo-escuro {
     background-color: black;
     color: aliceblue;
 }
+
 .modo-escuro .cartao-pokemon {
     background-color: #a8a8a8;
 }
