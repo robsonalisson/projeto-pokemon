@@ -134,7 +134,9 @@ li.tipo.inseto {
 
 body.modo-escuro {
     background-color: black;
-    color: aliceblue;
+    color: rgb(29, 37, 37);
+    font-weight: normal;
+    
 }
 
 .modo-escuro .cartao-pokemon {
